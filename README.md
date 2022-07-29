@@ -3,10 +3,12 @@
 This is a simple script written while helping out with a friend's assignment, using RSA and OEAP.
 It is meant to simulate a ransomware.
 
+## Table of contents
+
 -   [Files](#files)
 -   [Dependencies](#dependencies)
 
-### Files
+## Files
 - "hackman.py" is the encryption script, programmed to encrypt all .txt files within the 
 directory using simple text substitution ciphering of the alphabets "a-z". Next, it will generate a public and private 
 key using RSA, and the substitution key is then encrypted with the public key through OEAP into "key.bin".
@@ -15,5 +17,5 @@ key using RSA, and the substitution key is then encrypted with the public key th
 Furthermore, the script will take the decrypted substitution key to reverse the substituted text into the original
 alphabet prior to the substitution.
 
-### Dependencies
+## Dependencies
     pycryptodome
